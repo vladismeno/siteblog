@@ -2,5 +2,3 @@ venv
 .idea
 __pycache__/
 static
-/siteblog/siteblog/static/
-/siteblog/static/*
