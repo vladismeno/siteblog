@@ -63,3 +63,7 @@ class Post(models.Model):
         verbose_name = 'Статья'
         verbose_name_plural = 'Статьи'
         ordering = ['-created_at']
+
+
+    def get_absolute_url(self):
+        return reverse('post', kwargs={"slug": self.slug})
